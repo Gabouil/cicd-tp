@@ -16,6 +16,12 @@ jobs:
       with:
         node-version: 24
         cache: 'npm'
+
+    - name: Check Node.js version
+      run: node -v
+
+    - name: Install npm dependencies
+      run: npm install
     
     - name: Install dependencies
       run: npm ci
